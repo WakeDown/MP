@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="FrameJavaTest:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/FrameJavaTest_jar</output-path>
+    <root id="archive" name="FrameJavaTest.jar">
+      <element id="module-output" name="FrameJavaTest" />
+    </root>
+  </artifact>
+</component>
