@@ -1,0 +1,345 @@
+2
+#include <iostream> 
+#include <iomanip> 
+#include <clocale> 
+
+using namespace std; 
+
+class frac{ 
+private: 
+
+friend frac operator +(frac f, frac a); 
+friend frac operator -(frac f, frac a); 
+friend frac operator *(frac f, frac a); 
+friend frac operator /(frac f, frac a); 
+
+friend void simplification(); 
+
+public: 
+long numerator, denominator; 
+//Конструкторы 
+frac(long num) : numerator(num), denominator(1){} 
+frac(long num, long den) : numerator(num), denominator(den){} 
+
+
+
+
+// Метод вывода на экран 
+void output() const { 
+cout « numerator « '/' « denominator « endl; 
+} 
+
+}; 
+
+//Перегруженный оператор сложения (дробь + число) 
+frac operator +(frac f, frac a) 
+{ 
+frac fracf(0, 0); 
+fracf.numerator = f.numerator*a.denominator + a.numerator* f.denominator; 
+fracf.denominator = f.denominator*a.denominator; 
+return fracf; 
+} 
+
+
+frac operator - (frac f, frac a) 
+{ 
+frac fracf(0, 0); 
+fracf.numerator = f.numerator*a.denominator - a.numerator* f.denominator; 
+fracf.denominator = f.denominator*a.denominator; 
+return fracf; 
+} 
+frac operator * (frac f, frac a) 
+{ 
+frac fracf(0, 0); 
+fracf.numerator = a.numerator* f.numerator; 
+fracf.denominator = f.denominator*a.denominator; 
+return fracf; 
+} 
+
+frac operator / (frac f, frac a) 
+{ 
+frac fracf(0, 0); 
+fracf.numerator = f.numerator*a.denominator; 
+fracf.denominator = f.denominator*a.numerator; 
+return fracf; 
+} 
+
+//Метод упрощения 
+frac simplification(frac f1) 
+{ 
+int a = f1.numerator, b = f1.denominator; 
+int t; 
+//Поиск наибольшего общего делителя 
+if (a<b) { t = a; a = b; b = t; } 
+while (b != 0) { 
+t = b; 
+b = a%b; 
+a = t; 
+} 
+int nod = a; 
+f1.numerator /= nod; 
+f1.denominator /= nod; 
+return f1; 
+
+} 
+
+void main() { 
+
+frac f1(5,3.215); 
+frac f2 = 10 + f1; 
+int q = 0; 
+}
+
+3
+#include <iostream>
+#include <iomanip>
+#include <clocale>
+#include <typeinfo>
+
+using namespace std;
+
+class base {
+public:
+	virtual void viewName() = 0;
+};
+
+class derived1: public base {
+	void viewName() {
+		cout << typeid(derived1).name() << endl;
+	}
+};
+
+class derived2: public base {
+	void viewName() {
+		cout << typeid(derived2).name() << endl;
+	}
+};
+
+
+void displayName(base* base) {
+	base->viewName();
+}
+
+
+void main() {
+	base *obj1 = new derived1();
+	base *obj2 = new derived2();
+	
+	displayName(obj1);
+	displayName(obj2);
+}
+
+
+4
+#include "iostream"
+
+using namespace std;
+
+template <typename type> 
+void swaps(type& a, type& b)
+{
+	type temp;
+
+	temp = a;
+	a = b;
+	b = temp;
+}
+
+void main()
+{	
+	int i1, i2;
+	char q1, q2, choice;
+		
+	cout << "Type? (int - i;char- c)";
+	cin >> choice;
+
+	if (choice == 'i')
+	{
+		cout << "int i1:";
+		cin >> i1;
+		cout << "int i2:";
+		cin >> i2;
+		swaps(i1, i2);
+		cout << "int i1:" << i1 << "int i2:" << i2<< endl;
+
+	}
+		
+	else if (choice == 'c')
+		
+	{
+		cout << "char q1:";
+		cin >> q1;
+		cout << "char q2:";
+		cin >> q2;
+		swaps(q1, q2);
+		cout << "char q1: " << q1 << " char q2:" << q2 << endl;
+	}
+
+	system("pause");
+}
+
+
+5
+// arrover3.cpp
+// creates safe array (index values are checked before access)
+// uses overloaded [] operator for both put and get
+
+#include <iostream>
+using namespace std;
+#include <process.h>           //for exit()
+const int LIMIT = 10;         //array size
+////////////////////////////////////////////////////////////////
+template <class T>
+
+class safearay
+   {
+   private:
+      T arr[LIMIT];
+   public:
+      T& operator [](int n)  //note: return by reference
+         {
+         if( n< 0 || n>=LIMIT )
+            { cout << "\nIndex out of bounds"; exit(1); }
+         return arr[n];
+         }
+   };
+////////////////////////////////////////////////////////////////
+void main()
+{
+        char choice;
+
+
+  cout << "Type? (int - i; char - c): ";
+  cin >> choice;
+
+      if (choice == 'c')
+          {
+          safearay <char> sa1;
+   for(int j=0; j<LIMIT; j++)  //insert elements
+    { cout << j << ": ";
+    cin >> sa1[j];           //*left* side of equal sign
+    }
+   for(int j=0; j<LIMIT; j++)      //display elements
+      {
+      char temp = sa1[j];       //*right* side of equal sign
+      cout << "Element " << j << " is " << temp << endl;
+      }
+            }
+   if (choice == 'i')
+          {
+          safearay <int> sa1;
+               for(int j=0; j<LIMIT; j++)  //insert elements
+              { cout << j << ": ";
+               cin >> sa1[j];           //*left* side of equal sign
+               }
+   for(int j=0; j<LIMIT; j++)      //display elements
+      {
+      char temp = sa1[j];       //*right* side of equal sign
+      cout << "Element " << j << " is " << temp << endl;
+      }
+
+ }
+   system ("pause");
+ }
+
+9
+
+#include <iostream> 
+
+using namespace std;
+
+void main()
+{
+	long long int a = 0, b = 1, c = 1;
+	while (b <= INT_MAX)
+	{
+		c = a + b;
+		a = b;
+		b = c;
+	}
+	cout << "c = " << c << endl;
+	system("PAUSE");
+}
+
+10
+#include <iostream> 
+#include <clocale> 
+#include <string> 
+#include <vector> 
+#include <fstream> 
+#include <iomanip> 
+
+unsigned short int workers = 0; 
+void input(); 
+void input_file(); 
+void output_file(); 
+
+unsigned long number[300]; 
+vector <string> first_name[300], middle_name[300], family_name[300];
+
+using namespace std; 
+
+void main() 
+{ 
+setlocale(LC_ALL, "Russian"); 
+
+
+
+input(); 
+
+output_file(); 
+
+system("pause"); 
+} 
+
+void input() 
+{ 
+char choice; 
+cout « "Имя: "; 
+cin » first_name[workers]; 
+cout « "Отчество: "; 
+cin » middle_name[workers]; 
+cout « "Фамилия: "; 
+cin » family_name[workers]; 
+cout « "Номер: "; 
+cin » number[workers]; 
+cout « "Продолжить ввод? (y/n): "; 
+cin » choice; 
+workers++; 
+if (choice == 'y') 
+input(); 
+} 
+
+void input_file() 
+{ 
+ofstream fin("cppstudio.txt"); // создаём объект класса ofstream для записи и связываем его с файлом cppstudio.txt 
+
+fin « setw(12) « setiosflags(ios::left) « " " « setw(12) 
+« setiosflags(ios::left) « "Имя: " « setw(12) 
+« setiosflags(ios::left) « "Отчество: " « setw(12) 
+« setiosflags(ios::left) « "Фамилия: " « setw(12) 
+« setiosflags(ios::left) « "Номер: " « setw(12) « endl; 
+
+for (int i = 0; i < workers; i++) 
+{ 
+fin « setw(12) « setiosflags(ios::left) « i « setw(12) 
+« setiosflags(ios::left) « first_name[i] « setw(12) 
+« setiosflags(ios::left) « middle_name[i] « setw(12) 
+« setiosflags(ios::left) « family_name[i] « setw(12) 
+« setiosflags(ios::left) « number[i] « setw(12) « endl; 
+} 
+
+fin.close(); // закрываем файл 
+} 
+void output_file() 
+{ 
+char buff[50]; // буфер промежуточного хранения считываемого из файла текста 
+ifstream fin("cppstudio.txt"); // открыли файл для чтения 
+
+fin » buff; // считали первое слово из файла 
+cout « buff « endl; // напечатали это слово 
+
+fin.getline(buff, 50); // считали строку из файла 
+fin.close(); // закрываем файл 
+cout « buff « endl; // напечатали эту строку 
+}

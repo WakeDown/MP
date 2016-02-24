@@ -1,0 +1,18 @@
+﻿Сборка начата 24.11.2015 18:12:15.
+     1>Проект "c:\Users\trefi\OneDrive\documents\visual studio 2015\Projects\5.1\5.1\5.1.vcxproj" в узле 2 (целевые объекты Build).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\..\..\..\..\Downloads\linkedList.cpp
+         linkedList.cpp
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\xutility(2230): error C4996: 'std::_Copy_impl': Function call with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators'
+         c:\program files (x86)\microsoft visual studio 14.0\vc\include\xutility(2216): note:  см. объявление "std::_Copy_impl"
+         c:\users\trefi\downloads\linkedlist.cpp(31): note: см. ссылку на создание экземпляров функции шаблон при компиляции "_OutIt std::copy<int*,int*>(_InIt,_InIt,_OutIt)"
+                 with
+                 [
+                     _OutIt=int *,
+                     _InIt=int *
+                 ]
+     1>Сборка проекта "c:\Users\trefi\OneDrive\documents\visual studio 2015\Projects\5.1\5.1\5.1.vcxproj" завершена (целевые объекты Build) с ошибкой.
+
+Ошибка сборки.
+
+Затраченное время: 00:00:00.51

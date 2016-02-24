@@ -1,0 +1,9 @@
+c:\users\trefi\onedrive\documents\visual studio 2015\Projects\SortInForm\SortInForm\bin\Debug\SortInForm.exe.config
+c:\users\trefi\onedrive\documents\visual studio 2015\Projects\SortInForm\SortInForm\bin\Debug\SortInForm.exe
+c:\users\trefi\onedrive\documents\visual studio 2015\Projects\SortInForm\SortInForm\bin\Debug\SortInForm.pdb
+c:\users\trefi\onedrive\documents\visual studio 2015\Projects\SortInForm\SortInForm\obj\Debug\SortInForm.csprojResolveAssemblyReference.cache
+c:\users\trefi\onedrive\documents\visual studio 2015\Projects\SortInForm\SortInForm\obj\Debug\SortInForm.Form1.resources
+c:\users\trefi\onedrive\documents\visual studio 2015\Projects\SortInForm\SortInForm\obj\Debug\SortInForm.Properties.Resources.resources
+c:\users\trefi\onedrive\documents\visual studio 2015\Projects\SortInForm\SortInForm\obj\Debug\SortInForm.csproj.GenerateResource.Cache
+c:\users\trefi\onedrive\documents\visual studio 2015\Projects\SortInForm\SortInForm\obj\Debug\SortInForm.exe
+c:\users\trefi\onedrive\documents\visual studio 2015\Projects\SortInForm\SortInForm\obj\Debug\SortInForm.pdb

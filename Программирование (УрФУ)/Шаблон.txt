@@ -1,0 +1,174 @@
+#pragma hdrstop
+#pragma argsused
+ 
+#ifdef _WIN32
+#include <tchar.h>
+#else
+  typedef char _TCHAR;
+  #define _tmain main
+#endif
+#include <stdio.h>
+#include <iostream>
+#include <sstream>
+#include <vector>
+#include <algorithm>
+using namespace std;
+
+struct Room
+{
+	double X, Y, Z;  //x- ширина, y- высота, z- длина.
+};
+ struct Plosh
+ {
+	 double Sf, Sd;
+	 Room rect;
+ };
+
+
+
+
+
+
+
+
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+struct vvod
+{
+	int a, b;
+};
+int chis, znam;
+vvod chislo1;
+vvod chislo2;
+void summ();
+void razn();
+void umn();
+void del();
+void sokr();
+
+int main()
+{
+	setlocale(LC_CTYPE, "Russian");
+	char znak, c;
+	cin >> chislo1.a >> c >> chislo1.b >> znak >> chislo2.a >> c >> chislo2.b;
+	if (znak == '+')
+	{
+		summ();	
+	}
+	if (znak == '-')
+	{
+		razn();	
+	}
+	if (znak == '*')
+	{
+		umn();	
+	}
+	if (znak == '/')
+	{
+		del();	
+	}
+	system ("pause");
+	return 0;
+}
+
+void summ()
+{
+	znam = chislo2.b * chislo1.b;
+	chis = chislo1.a*chislo2.b + chislo1.b*chislo2.a;
+	sokr();
+
+}
+
+void razn()
+{
+	znam = chislo2.b * chislo1.b;
+	chis = chislo1.a*chislo2.b - chislo1.b*chislo2.a;
+	sokr();
+
+}
+
+void umn()
+{
+	znam = chislo1.b * chislo2.b;
+	chis = chislo1.a * chislo2.a;
+	sokr();
+}
+
+void del()
+{
+	znam = chislo1.b * chislo2.a;
+	chis = chislo1.a * chislo2.b;
+	sokr();
+}
+
+void sokr()
+{
+	int c=chis;
+	int d=znam;
+ 
+for(int i=1; i<=chis && i<=znam; i++)
+  {
+  float aa=chis%i;
+  float bb=znam%i;
+  if(!(chis%i) && !(znam%i))
+    {
+    c=chis/i;
+    d=znam/i;
+    }
+  }
+cout << " = " << c << "/" << d << endl;
+}
+
+
+/*struct Plosh
+ {
+	 double Sf, Sd;
+	 Room rect;
+ };
+
+void rooms (Plosh *box);
+void schet(Plosh *box);
+int i, j;
+
+int main()
+{
+	setlocale(LC_CTYPE, "Russian");
+	cout << "¬ведите количество комнат, которые вы хотите перекрасить в новый цвет:" << endl;
+	cin >> i;
+	Plosh* box = new Plosh[i];
+	rooms (box);
+	schet(box);
+delete []box;
+system ("pause");
+return 0;
+}
+
+void rooms (Plosh *box)
+{
+	for(j=0; j<i; j++)
+    {
+		int numkomn = j+1;
+        cin.sync();
+        cout << "¬ведите ширину " << numkomn << " комнаты в метрах: " << endl;
+        cin >> box[j].rect.X;
+        cout << "¬ведите высоту " << numkomn << " комнаты в метрах: " << endl;
+        cin>>box[j].rect.Y;
+        cout << "¬ведите длину " << numkomn << " комнаты  в метрах: " << endl;
+        cin >> box[j].rect.Z;
+		cout << endl;
+    }
+}
+
+void schet(Plosh *box)
+{
+	for(j=0; j<i; j++)
+	{
+		int numkomn = j+1;
+	box[j].Sf = 2 * 10.76 * box[j].rect.Y * (box[j].rect.X + box[j].rect.Z);
+	box[j].Sd = 2 * 10.76 * 144 * box[j].rect.Y * (box[j].rect.X + box[j].rect.Z);
+	cout << "ѕлощадь под покраску комнаты "<< numkomn << " составл€ет " << box[j].Sf << " футов. »ли " << box[j].Sd  << " дюймов." << endl ;
+	}
+}*/

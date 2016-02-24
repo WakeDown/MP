@@ -1,0 +1,9 @@
+c:\users\андрей\documents\visual studio 2012\Projects\SharpForm\SharpForm\bin\Debug\SharpForm.exe.config
+c:\users\андрей\documents\visual studio 2012\Projects\SharpForm\SharpForm\bin\Debug\SharpForm.exe
+c:\users\андрей\documents\visual studio 2012\Projects\SharpForm\SharpForm\bin\Debug\SharpForm.pdb
+c:\users\андрей\documents\visual studio 2012\Projects\SharpForm\SharpForm\obj\Debug\SharpForm.csprojResolveAssemblyReference.cache
+c:\users\андрей\documents\visual studio 2012\Projects\SharpForm\SharpForm\obj\Debug\SharpForm.Form1.resources
+c:\users\андрей\documents\visual studio 2012\Projects\SharpForm\SharpForm\obj\Debug\SharpForm.Properties.Resources.resources
+c:\users\андрей\documents\visual studio 2012\Projects\SharpForm\SharpForm\obj\Debug\SharpForm.csproj.GenerateResource.Cache
+c:\users\андрей\documents\visual studio 2012\Projects\SharpForm\SharpForm\obj\Debug\SharpForm.exe
+c:\users\андрей\documents\visual studio 2012\Projects\SharpForm\SharpForm\obj\Debug\SharpForm.pdb

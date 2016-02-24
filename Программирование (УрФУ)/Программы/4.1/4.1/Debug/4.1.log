@@ -1,0 +1,12 @@
+﻿Сборка начата 24.11.2015 17:37:43.
+     1>Проект "c:\Users\trefi\OneDrive\documents\visual studio 2015\Projects\4.1\4.1\4.1.vcxproj" в узле 2 (целевые объекты Build).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt Source.cpp
+         Source.cpp
+     1>c:\users\trefi\onedrive\documents\visual studio 2015\projects\4.1\4.1\source.cpp(58): error C4996: 'cputs': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _cputs. See online help for details.
+         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\conio.h(447): note:  см. объявление "cputs"
+     1>Сборка проекта "c:\Users\trefi\OneDrive\documents\visual studio 2015\Projects\4.1\4.1\4.1.vcxproj" завершена (целевые объекты Build) с ошибкой.
+
+Ошибка сборки.
+
+Затраченное время: 00:00:00.96

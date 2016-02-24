@@ -1,0 +1,6 @@
+c:\users\андрей\documents\visual studio 2012\Projects\SharpTest\SharpTest\bin\Debug\SharpTest.exe.config
+c:\users\андрей\documents\visual studio 2012\Projects\SharpTest\SharpTest\bin\Debug\SharpTest.exe
+c:\users\андрей\documents\visual studio 2012\Projects\SharpTest\SharpTest\bin\Debug\SharpTest.pdb
+c:\users\андрей\documents\visual studio 2012\Projects\SharpTest\SharpTest\obj\Debug\SharpTest.csprojResolveAssemblyReference.cache
+c:\users\андрей\documents\visual studio 2012\Projects\SharpTest\SharpTest\obj\Debug\SharpTest.exe
+c:\users\андрей\documents\visual studio 2012\Projects\SharpTest\SharpTest\obj\Debug\SharpTest.pdb

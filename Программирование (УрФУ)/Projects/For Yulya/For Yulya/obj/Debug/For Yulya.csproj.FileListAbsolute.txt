@@ -1,0 +1,9 @@
+c:\users\trefi\onedrive\documents\visual studio 2015\Projects\For Yulya\For Yulya\bin\Debug\For Yulya.exe.config
+c:\users\trefi\onedrive\documents\visual studio 2015\Projects\For Yulya\For Yulya\bin\Debug\For Yulya.exe
+c:\users\trefi\onedrive\documents\visual studio 2015\Projects\For Yulya\For Yulya\bin\Debug\For Yulya.pdb
+c:\users\trefi\onedrive\documents\visual studio 2015\Projects\For Yulya\For Yulya\obj\Debug\For Yulya.csprojResolveAssemblyReference.cache
+c:\users\trefi\onedrive\documents\visual studio 2015\Projects\For Yulya\For Yulya\obj\Debug\For_Yulya.Form1.resources
+c:\users\trefi\onedrive\documents\visual studio 2015\Projects\For Yulya\For Yulya\obj\Debug\For_Yulya.Properties.Resources.resources
+c:\users\trefi\onedrive\documents\visual studio 2015\Projects\For Yulya\For Yulya\obj\Debug\For Yulya.csproj.GenerateResource.Cache
+c:\users\trefi\onedrive\documents\visual studio 2015\Projects\For Yulya\For Yulya\obj\Debug\For Yulya.exe
+c:\users\trefi\onedrive\documents\visual studio 2015\Projects\For Yulya\For Yulya\obj\Debug\For Yulya.pdb
