@@ -13,7 +13,7 @@ namespace Laba1_17._02._16
 
         public Number6(String intStr)
         {
-            intNum = intStr.Split(new char[] { ' ' });
+            intNum = intStr.Split(' ');
             sumInts();
         }
 

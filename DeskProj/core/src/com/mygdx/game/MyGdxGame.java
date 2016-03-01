@@ -13,7 +13,7 @@ public class MyGdxGame extends ApplicationAdapter {
 	MyRocket myRocket;
 	BitmapFont bmf;
 	Double scoreInText;
-	private final int ASTEROIDSNUM = 1;
+	private final int ASTEROIDSNUM = 10;
 	Asteroids[] asteroids = new Asteroids[ASTEROIDSNUM];
 	@Override
 	public void create () {

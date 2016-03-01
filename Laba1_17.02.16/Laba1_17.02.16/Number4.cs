@@ -19,7 +19,8 @@ namespace Laba1_17._02._16
 
         void subTime()
         {
-            result = ((DateTime.Now.Subtract(myDateTime)).Days + " Дней "
+            TimeSpan d = DateTime.Now.Subtract(myDateTime);
+            result = (d.Days + " Дней "
                 + (DateTime.Now.Subtract(myDateTime)).Hours + " Часов "
                 + (DateTime.Now.Subtract(myDateTime)).Minutes + " Минут");
         }
