@@ -1,0 +1,6 @@
+c:\users\trefi\onedrive\documents\visual studio 2015\Projects\Laba2_09.03.16\Laba2_09.03.16\bin\Debug\Laba2_09.03.16.exe.config
+c:\users\trefi\onedrive\documents\visual studio 2015\Projects\Laba2_09.03.16\Laba2_09.03.16\bin\Debug\Laba2_09.03.16.exe
+c:\users\trefi\onedrive\documents\visual studio 2015\Projects\Laba2_09.03.16\Laba2_09.03.16\bin\Debug\Laba2_09.03.16.pdb
+c:\users\trefi\onedrive\documents\visual studio 2015\Projects\Laba2_09.03.16\Laba2_09.03.16\obj\Debug\Laba2_09.03.16.csprojResolveAssemblyReference.cache
+c:\users\trefi\onedrive\documents\visual studio 2015\Projects\Laba2_09.03.16\Laba2_09.03.16\obj\Debug\Laba2_09.03.16.exe
+c:\users\trefi\onedrive\documents\visual studio 2015\Projects\Laba2_09.03.16\Laba2_09.03.16\obj\Debug\Laba2_09.03.16.pdb
