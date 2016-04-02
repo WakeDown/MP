@@ -1,0 +1,15 @@
+c:\users\trefi\onedrive\documents\visual studio 2015\Projects\ClientIProj\ClientIProj\bin\Debug\ClientIProj.exe.config
+c:\users\trefi\onedrive\documents\visual studio 2015\Projects\ClientIProj\ClientIProj\bin\Debug\ClientIProj.exe
+c:\users\trefi\onedrive\documents\visual studio 2015\Projects\ClientIProj\ClientIProj\bin\Debug\ClientIProj.pdb
+c:\users\trefi\onedrive\documents\visual studio 2015\Projects\ClientIProj\ClientIProj\bin\Debug\MySql.Data.dll
+c:\users\trefi\onedrive\documents\visual studio 2015\Projects\ClientIProj\ClientIProj\obj\Debug\ClientIProj.csprojResolveAssemblyReference.cache
+c:\users\trefi\onedrive\documents\visual studio 2015\Projects\ClientIProj\ClientIProj\obj\Debug\ClientIProj.EnterForm.resources
+c:\users\trefi\onedrive\documents\visual studio 2015\Projects\ClientIProj\ClientIProj\obj\Debug\ClientIProj.Properties.Resources.resources
+c:\users\trefi\onedrive\documents\visual studio 2015\Projects\ClientIProj\ClientIProj\obj\Debug\ClientIProj.csproj.GenerateResource.Cache
+c:\users\trefi\onedrive\documents\visual studio 2015\Projects\ClientIProj\ClientIProj\obj\Debug\ClientIProj.exe
+c:\users\trefi\onedrive\documents\visual studio 2015\Projects\ClientIProj\ClientIProj\obj\Debug\ClientIProj.pdb
+c:\users\trefi\onedrive\documents\visual studio 2015\Projects\ClientIProj\ClientIProj\obj\Debug\ClientIProj.MainForm.resources
+C:\Users\trefi\onedrive\documents\visual studio 2015\Projects\ClientIProj\ClientIProj\obj\Debug\ClientIProj.ClientsListsOrders.resources
+C:\Users\trefi\onedrive\documents\visual studio 2015\Projects\ClientIProj\ClientIProj\obj\Debug\ClientIProj.RegClient.resources
+C:\Users\trefi\OneDrive\Documents\Visual Studio 2015\Projects\ClientIProj\ClientIProj\obj\Debug\ClientIProj.BasketForm.resources
+C:\Users\trefi\onedrive\documents\visual studio 2015\Projects\ClientIProj\ClientIProj\obj\Debug\ClientIProj.OrderHisrory.resources

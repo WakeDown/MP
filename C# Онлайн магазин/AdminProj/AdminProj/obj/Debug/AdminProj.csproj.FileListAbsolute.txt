@@ -1,0 +1,13 @@
+c:\users\trefi\onedrive\documents\visual studio 2015\Projects\AdminProj\AdminProj\bin\Debug\AdminProj.exe.config
+c:\users\trefi\onedrive\documents\visual studio 2015\Projects\AdminProj\AdminProj\bin\Debug\AdminProj.exe
+c:\users\trefi\onedrive\documents\visual studio 2015\Projects\AdminProj\AdminProj\bin\Debug\AdminProj.pdb
+c:\users\trefi\onedrive\documents\visual studio 2015\Projects\AdminProj\AdminProj\obj\Debug\AdminProj.csprojResolveAssemblyReference.cache
+c:\users\trefi\onedrive\documents\visual studio 2015\Projects\AdminProj\AdminProj\obj\Debug\AdminProj.Form1.resources
+c:\users\trefi\onedrive\documents\visual studio 2015\Projects\AdminProj\AdminProj\obj\Debug\AdminProj.Properties.Resources.resources
+c:\users\trefi\onedrive\documents\visual studio 2015\Projects\AdminProj\AdminProj\obj\Debug\AdminProj.csproj.GenerateResource.Cache
+c:\users\trefi\onedrive\documents\visual studio 2015\Projects\AdminProj\AdminProj\obj\Debug\AdminProj.exe
+c:\users\trefi\onedrive\documents\visual studio 2015\Projects\AdminProj\AdminProj\obj\Debug\AdminProj.pdb
+c:\users\trefi\onedrive\documents\visual studio 2015\Projects\AdminProj\AdminProj\bin\Debug\MySql.Data.dll
+C:\Users\trefi\onedrive\documents\visual studio 2015\Projects\AdminProj\AdminProj\obj\Debug\AdminProj.EditForm.resources
+C:\Users\trefi\onedrive\documents\visual studio 2015\Projects\AdminProj\AdminProj\obj\Debug\AdminProj.OrderInfoForm.resources
+C:\Users\trefi\onedrive\documents\visual studio 2015\Projects\AdminProj\AdminProj\obj\Debug\AdminProj.EnterForm.resources
