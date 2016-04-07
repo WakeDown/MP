@@ -9,6 +9,7 @@ using System.Runtime.Serialization.Formatters.Binary;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Word = Microsoft.Office.Interop.Word;
 
 namespace ClientIProj
 {
@@ -31,7 +32,7 @@ namespace ClientIProj
             initDataUser();
             foreach (OrdersForHistory order in orders)
             {
-                string[] data = {order.products, order.date, order.price.ToString()};
+                string[] data = {order.products, order.date, order.price.ToString(), order.status};
                 dataGridView1.Rows.Add(data);
             }
             
@@ -83,6 +84,28 @@ namespace ClientIProj
             {
                 binFormat.Serialize(fStream, UsersAvatar.UserImage);
             }
+        }
+
+        private void toolStripButton3_Click(object sender, EventArgs e)
+        {
+            Word.Application wdApp = new Word.Application();
+            wdApp.Visible = true;
+            wdApp.Documents.Add();
+            Word.Document docum = wdApp.Documents.get_Item(1);
+            var wdRange = docum.Range(0, 0);
+            var wdTable = docum.Tables.Add(wdRange, orders.Count + 1, 4);  //строки, столбцы
+            wdTable.Cell(1, 1).Range.Text = "Продукция";
+            wdTable.Cell(1, 2).Range.Text = "Дата";
+            wdTable.Cell(1, 3).Range.Text = "Стоимость";
+            wdTable.Cell(1, 4).Range.Text = "Статус";
+            for (int i = 2; i < orders.Count + 2; i++)
+            {
+                wdTable.Cell(i, 1).Range.Text = orders[i - 2].products;
+                wdTable.Cell(i, 2).Range.Text = orders[i - 2].date;
+                wdTable.Cell(i, 3).Range.Text = orders[i - 2].price.ToString();
+                wdTable.Cell(i, 4).Range.Text = orders[i - 2].status;
+            }
+            wdTable.set_Style("Таблица-сетка 4");
         }
     }
 }

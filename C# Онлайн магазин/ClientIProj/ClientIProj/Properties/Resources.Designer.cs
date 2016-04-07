@@ -63,6 +63,16 @@ namespace ClientIProj.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _interface {
+            get {
+                object obj = ResourceManager.GetObject("interface", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap arrows_1_ {
             get {
                 object obj = ResourceManager.GetObject("arrows(1)", resourceCulture);

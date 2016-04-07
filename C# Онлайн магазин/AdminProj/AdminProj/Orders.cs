@@ -14,16 +14,18 @@ namespace AdminProj
         private string date;
         private string code;
         private string adress;
+        public string status { get; set; }
 
         public static Orders order;
 
-        public Orders(int id, string clientName, string date, string code, string adress)
+        public Orders(int id, string clientName, string date, string code, string adress, string st)
         {
             this.id = id;
             this.clientName = clientName;
             this.date = date;
             this.code = code;
             this.adress = adress;
+            status = st;
         }
 
         public int Id { get { return id; } }
@@ -74,7 +76,7 @@ namespace AdminProj
                 {
                     orders.Add(new Orders(Convert.ToInt32(reader["idOrder"]), reader["clientName"].ToString(),
                         reader["date"].ToString(), reader["arhiv"].ToString(),
-                        reader["adress"].ToString()));
+                        reader["adress"].ToString(), reader["status"].ToString()));
                 }
                 reader.Close();
             }

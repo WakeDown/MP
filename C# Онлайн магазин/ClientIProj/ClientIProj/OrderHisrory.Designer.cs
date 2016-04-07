@@ -34,6 +34,7 @@
             this.ProdName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DateColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Prise = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.status = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
@@ -47,27 +48,27 @@
             this.label3 = new System.Windows.Forms.Label();
             this.idLab = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.сменитьКартинкуПрофиляToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.toolStrip2 = new System.Windows.Forms.ToolStrip();
-            this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripLabel2 = new System.Windows.Forms.ToolStripLabel();
+            this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
+            this.сменитьКартинкуПрофиляToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.toolStrip2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -80,11 +81,12 @@
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ProdName,
             this.DateColumn,
-            this.Prise});
+            this.Prise,
+            this.status});
             this.dataGridView1.Location = new System.Drawing.Point(6, 44);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(566, 390);
+            this.dataGridView1.Size = new System.Drawing.Size(652, 390);
             this.dataGridView1.TabIndex = 0;
             // 
             // ProdName
@@ -106,7 +108,14 @@
             this.Prise.HeaderText = "Стоимость";
             this.Prise.Name = "Prise";
             this.Prise.ReadOnly = true;
-            this.Prise.Width = 180;
+            this.Prise.Width = 140;
+            // 
+            // status
+            // 
+            this.status.HeaderText = "Статус";
+            this.status.Name = "status";
+            this.status.ReadOnly = true;
+            this.status.Width = 120;
             // 
             // groupBox1
             // 
@@ -245,31 +254,12 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "id:";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.ContextMenuStrip = this.contextMenuStrip1;
-            this.pictureBox1.Image = global::ClientIProj.Properties.Resources.people_2_;
-            this.pictureBox1.Location = new System.Drawing.Point(6, 44);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(250, 250);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            // 
             // contextMenuStrip1
             // 
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.сменитьКартинкуПрофиляToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(229, 26);
-            // 
-            // сменитьКартинкуПрофиляToolStripMenuItem
-            // 
-            this.сменитьКартинкуПрофиляToolStripMenuItem.Image = global::ClientIProj.Properties.Resources.picture;
-            this.сменитьКартинкуПрофиляToolStripMenuItem.Name = "сменитьКартинкуПрофиляToolStripMenuItem";
-            this.сменитьКартинкуПрофиляToolStripMenuItem.Size = new System.Drawing.Size(228, 22);
-            this.сменитьКартинкуПрофиляToolStripMenuItem.Text = "Сменить картинку профиля";
-            this.сменитьКартинкуПрофиляToolStripMenuItem.Click += new System.EventHandler(this.сменитьКартинкуПрофиляToolStripMenuItem_Click);
             // 
             // toolStrip1
             // 
@@ -283,16 +273,6 @@
             this.toolStrip1.Size = new System.Drawing.Size(259, 25);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
-            // 
-            // toolStripButton1
-            // 
-            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton1.Image = global::ClientIProj.Properties.Resources.arrows_1_;
-            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(23, 22);
-            this.toolStripButton1.Text = "Назад в магазин";
-            this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
             // 
             // toolStripSeparator1
             // 
@@ -311,7 +291,7 @@
             this.groupBox2.Controls.Add(this.dataGridView1);
             this.groupBox2.Location = new System.Drawing.Point(283, 12);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(581, 440);
+            this.groupBox2.Size = new System.Drawing.Size(664, 440);
             this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "История заказов";
@@ -325,18 +305,9 @@
             this.toolStripLabel2});
             this.toolStrip2.Location = new System.Drawing.Point(3, 16);
             this.toolStrip2.Name = "toolStrip2";
-            this.toolStrip2.Size = new System.Drawing.Size(575, 25);
+            this.toolStrip2.Size = new System.Drawing.Size(658, 25);
             this.toolStrip2.TabIndex = 1;
             this.toolStrip2.Text = "toolStrip2";
-            // 
-            // toolStripButton3
-            // 
-            this.toolStripButton3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton3.Image = global::ClientIProj.Properties.Resources.icon_1_;
-            this.toolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton3.Name = "toolStripButton3";
-            this.toolStripButton3.Size = new System.Drawing.Size(23, 22);
-            this.toolStripButton3.Text = "Создать Excel файл";
             // 
             // toolStripSeparator3
             // 
@@ -349,15 +320,55 @@
             this.toolStripLabel2.Size = new System.Drawing.Size(86, 22);
             this.toolStripLabel2.Text = "toolStripLabel2";
             // 
+            // toolStripButton3
+            // 
+            this.toolStripButton3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton3.Image = global::ClientIProj.Properties.Resources._interface;
+            this.toolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton3.Name = "toolStripButton3";
+            this.toolStripButton3.Size = new System.Drawing.Size(23, 22);
+            this.toolStripButton3.Text = "Открыть в MS Word";
+            this.toolStripButton3.Click += new System.EventHandler(this.toolStripButton3_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.ContextMenuStrip = this.contextMenuStrip1;
+            this.pictureBox1.Image = global::ClientIProj.Properties.Resources.people_2_;
+            this.pictureBox1.Location = new System.Drawing.Point(6, 44);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(250, 250);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
+            // toolStripButton1
+            // 
+            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton1.Image = global::ClientIProj.Properties.Resources.arrows_1_;
+            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton1.Name = "toolStripButton1";
+            this.toolStripButton1.Size = new System.Drawing.Size(23, 22);
+            this.toolStripButton1.Text = "Назад в магазин";
+            this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
+            // 
+            // сменитьКартинкуПрофиляToolStripMenuItem
+            // 
+            this.сменитьКартинкуПрофиляToolStripMenuItem.Image = global::ClientIProj.Properties.Resources.picture;
+            this.сменитьКартинкуПрофиляToolStripMenuItem.Name = "сменитьКартинкуПрофиляToolStripMenuItem";
+            this.сменитьКартинкуПрофиляToolStripMenuItem.Size = new System.Drawing.Size(228, 22);
+            this.сменитьКартинкуПрофиляToolStripMenuItem.Text = "Сменить картинку профиля";
+            this.сменитьКартинкуПрофиляToolStripMenuItem.Click += new System.EventHandler(this.сменитьКартинкуПрофиляToolStripMenuItem_Click);
+            // 
             // OrderHisrory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(872, 464);
+            this.ClientSize = new System.Drawing.Size(959, 464);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MinimumSize = new System.Drawing.Size(606, 346);
+            this.MaximumSize = new System.Drawing.Size(975, 503);
+            this.MinimumSize = new System.Drawing.Size(975, 503);
             this.Name = "OrderHisrory";
             this.Text = "История";
             this.Load += new System.EventHandler(this.OrderHisrory_Load);
@@ -367,7 +378,6 @@
             this.groupBox3.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.contextMenuStrip1.ResumeLayout(false);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
@@ -375,6 +385,7 @@
             this.groupBox2.PerformLayout();
             this.toolStrip2.ResumeLayout(false);
             this.toolStrip2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -382,9 +393,6 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ProdName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn DateColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Prise;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripButton toolStripButton1;
@@ -410,5 +418,9 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
         private System.Windows.Forms.ToolStripLabel toolStripLabel2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ProdName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DateColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Prise;
+        private System.Windows.Forms.DataGridViewTextBoxColumn status;
     }
 }

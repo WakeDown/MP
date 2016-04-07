@@ -13,12 +13,14 @@ namespace ClientIProj
         public string products { get; set; }
         public string date { get; set; }
         public int price { get; set; }
+        public string status { get; set; }
 
-        public OrdersForHistory(string p, string d, int pr)
+        public OrdersForHistory(string p, string d, int pr, string st)
         {
             products = p;
             date = d;
             price = pr;
+            status = st;
         }
 
         public static List<OrdersForHistory> getUserOrders()
@@ -54,7 +56,7 @@ namespace ClientIProj
                             pr += (ps.Prise*Convert.ToInt32(data[1]));
                         }catch(Exception ex) { } finally { }
                     }
-                    orders.Add(new OrdersForHistory(prods, reader["date"].ToString(), pr));
+                    orders.Add(new OrdersForHistory(prods, reader["date"].ToString(), pr, reader["status"].ToString()));
                 }
                 reader.Close();
             }

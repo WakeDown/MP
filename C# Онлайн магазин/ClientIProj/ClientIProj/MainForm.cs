@@ -91,54 +91,62 @@ namespace ClientIProj
 
         private void addBut_Click(object sender, EventArgs e)
         {
-            int i = 0;
-            
-            if (int.TryParse(textBox4.Text, out i))
+            try
             {
-                if (int.Parse(textBox4.Text) <= products[listView1.SelectedIndices[0]].Stock)
+                int i = 0;
+
+                if (int.TryParse(textBox4.Text, out i))
                 {
-                    
-                    order.Add(new ClientsOrder(products[listView1.SelectedIndices[0]].Id, i));
-                    listBox2.Items.Add(products[listView1.SelectedIndices[0]].NameProduct + ": " + textBox4.Text + " ед.; " + sumProdLabel.Text +
-                                       " рублей");
-                    summa += Convert.ToInt32(sumProdLabel.Text);
-                    sumLabel.Text = summa.ToString();
-                    textBox4.Text = "";
-                    sumProdLabel.Text = "0";
-                    products[listView1.SelectedIndices[0]].Stock -= i;
-                    listView1.Items.Clear();
-                    foreach (var prod in products)
+                    if (int.Parse(textBox4.Text) <= products[listView1.SelectedIndices[0]].Stock)
                     {
-                        string[] prods = new[] { prod.NameProduct, prod.Prise.ToString(), prod.Stock.ToString() };
-                        listView1.Items.Add(new ListViewItem(prods));
+
+                        order.Add(new ClientsOrder(products[listView1.SelectedIndices[0]].Id, i));
+                        listBox2.Items.Add(products[listView1.SelectedIndices[0]].NameProduct + ": " + textBox4.Text +
+                                           " ед.; " + sumProdLabel.Text +
+                                           " рублей");
+                        summa += Convert.ToInt32(sumProdLabel.Text);
+                        sumLabel.Text = summa.ToString();
+                        textBox4.Text = "";
+                        sumProdLabel.Text = "0";
+                        products[listView1.SelectedIndices[0]].Stock -= i;
+                        listView1.Items.Clear();
+                        foreach (var prod in products)
+                        {
+                            string[] prods = new[] {prod.NameProduct, prod.Prise.ToString(), prod.Stock.ToString()};
+                            listView1.Items.Add(new ListViewItem(prods));
+                        }
+                    }
+                    else
+                    {
+                        string message =
+                            "Введенное вами количество больше, чем есть в наличии.";
+                        string caption = "Внимание";
+                        var result = MessageBox.Show(message, caption,
+                            MessageBoxButtons.OK,
+                            MessageBoxIcon.Warning);
                     }
                 }
-                else
-                {
-                    string message =
-       "Введенное вами количество больше, чем есть в наличии.";
-                    string caption = "Внимание";
-                    var result = MessageBox.Show(message, caption,
-                                                 MessageBoxButtons.OK,
-                                                 MessageBoxIcon.Warning);
-                }
-            }
+            }catch(Exception ex) { } finally { }
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            int index = -1;
-            index = listBox2.SelectedIndex;
-            if (index > -1)
+            try
             {
-                listBox2.Items.RemoveAt(index);
-                var delProd = (from p in products
-                    where p.Id == order[index].idProd
-                    select p).ElementAt(0);
-                summa -= delProd.Prise*order[index].countProd;
-                order.RemoveAt(index);
-                sumLabel.Text = summa.ToString();
-            }
+                int index = -1;
+                index = listBox2.SelectedIndex;
+                if (index > -1)
+                {
+                    listBox2.Items.RemoveAt(index);
+                    var delProd = (from p in products
+                        where p.Id == order[index].idProd
+                        select p).ElementAt(0);
+                    products.Where(x => x.Id == order[index].idProd).ElementAt(0).Stock += order[index].countProd;
+                    summa -= delProd.Prise*order[index].countProd;
+                    order.RemoveAt(index);
+                    sumLabel.Text = summa.ToString();
+                }
+            }catch(Exception ex) { }finally { }
         }
 
         private void сохранитьШаблонКарзиныToolStripMenuItem_Click(object sender, EventArgs e)
@@ -207,6 +215,7 @@ namespace ClientIProj
         {
             listBox2.Items.Clear();
             order.Clear();
+            updata();
             summa = 0;
             sumLabel.Text = "0";
         }
@@ -247,24 +256,14 @@ namespace ClientIProj
                     listView1.Items.Add(new ListViewItem(prods));
                 }
             }
-            else
-            {
-                foreach (var prod in products)
-                {
-                    string[] prods = new[] { prod.NameProduct, prod.Prise.ToString(), prod.Stock.ToString() };
-                    listView1.Items.Add(new ListViewItem(prods));
-                }
-            }
         }
 
         private void navigateBut_Click(object sender, EventArgs e)
         {
             int first = 0;
-            int end = 0;
-            if (int.TryParse(textBox2.Text, out  first))
+            int end = int.MaxValue;
+            if (int.TryParse(textBox2.Text, out  first) || int.TryParse(textBox3.Text, out end))
             {
-                if (int.TryParse(textBox3.Text, out end))
-                {
                     if (first <= end)
                     {
                         var navigateProd = from np in products
@@ -277,13 +276,17 @@ namespace ClientIProj
                             listView1.Items.Add(new ListViewItem(prods));
                         }
                     }
-                }
             }
         }
 
         private void firstBut_Click(object sender, EventArgs e)
         {
-            updata();
+            listView1.Items.Clear();
+            foreach (var prod in products)
+            {
+                string[] prods = new[] { prod.NameProduct, prod.Prise.ToString(), prod.Stock.ToString() };
+                listView1.Items.Add(new ListViewItem(prods));
+            }
             textBox1.Text = "";
             textBox3.Text = "";
             textBox2.Text = "";
@@ -292,6 +295,7 @@ namespace ClientIProj
         private void updata()
         {
             listView1.Items.Clear();
+            products = Product.loadData();
             foreach (var prod in products)
             {
                 string[] prods = new[] { prod.NameProduct, prod.Prise.ToString(), prod.Stock.ToString() };
@@ -309,9 +313,7 @@ namespace ClientIProj
         {
             try
             {
-                var selectProd = (from sp in products
-                                  where sp.NameProduct == listView1.SelectedItems[0].  //[listView1.SelectedIndices[0]].NameProduct
-                                  select sp).ElementAt(0);
+                var selectProd = products.Where(sp => sp.NameProduct == listView1.SelectedItems[0].Text).ElementAt(0);
                 label4.Text = selectProd.NameProduct;
             }
             catch (Exception ex) { }

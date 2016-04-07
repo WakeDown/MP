@@ -11,3 +11,4 @@ c:\users\trefi\onedrive\documents\visual studio 2015\Projects\AdminProj\AdminPro
 C:\Users\trefi\onedrive\documents\visual studio 2015\Projects\AdminProj\AdminProj\obj\Debug\AdminProj.EditForm.resources
 C:\Users\trefi\onedrive\documents\visual studio 2015\Projects\AdminProj\AdminProj\obj\Debug\AdminProj.OrderInfoForm.resources
 C:\Users\trefi\onedrive\documents\visual studio 2015\Projects\AdminProj\AdminProj\obj\Debug\AdminProj.EnterForm.resources
+C:\Users\trefi\onedrive\documents\visual studio 2015\Projects\AdminProj\AdminProj\obj\Debug\AdminProj.csproj.ResolveComReference.cache

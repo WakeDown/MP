@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Word = Microsoft.Office.Interop.Word;
 using MySql.Data.MySqlClient;
 
 namespace AdminProj
@@ -40,7 +41,7 @@ namespace AdminProj
             {
                 string[] data =
                 {
-                    order.getId().ToString(), order.getName(), order.getAdress(), order.getDate()
+                    order.getId().ToString(), order.getName(), order.getAdress(), order.getDate(), order.status
                 };
                 listView3.Items.Add(new ListViewItem(data));
             }
@@ -317,6 +318,36 @@ namespace AdminProj
         {
             deleteOrder();
             updateOrderList();
+        }
+
+        private void toolStripButton10_Click(object sender, EventArgs e)
+        {
+            openWord();
+        }
+
+        private void openWord()
+        {
+            Word.Application wdApp = new Word.Application();
+            wdApp.Visible = true;
+            wdApp.Documents.Add();
+            Word.Document docum = wdApp.Documents.get_Item(1);
+            wdApp.Selection.Text = "\nСписок клиентов за\n" + DateTime.Now;
+            var wdRange = docum.Range(0, 0);
+            var wdTable = docum.Tables.Add(wdRange, clients.Count + 1, 5);  //строки, столбцы
+            wdTable.Cell(1, 1).Range.Text = "id";
+            wdTable.Cell(1, 2).Range.Text = "Логин";
+            wdTable.Cell(1, 3).Range.Text = "Телефон";
+            wdTable.Cell(1, 4).Range.Text = "Адрес";
+            wdTable.Cell(1, 5).Range.Text = "Сайт";
+            for (int i = 2; i < clients.Count + 2; i++)
+            {
+                wdTable.Cell(i, 1).Range.Text = clients[i - 2].getId.ToString();
+                wdTable.Cell(i, 2).Range.Text = clients[i - 2].getName;
+                wdTable.Cell(i, 3).Range.Text = clients[i - 2].getTelephone();
+                wdTable.Cell(i, 4).Range.Text = clients[i - 2].getAdress();
+                wdTable.Cell(i, 5).Range.Text = clients[i - 2].getWeb();
+            }
+            wdTable.set_Style("Таблица-сетка 4");
         }
     }
 }

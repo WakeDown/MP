@@ -13,3 +13,4 @@ C:\Users\trefi\onedrive\documents\visual studio 2015\Projects\ClientIProj\Client
 C:\Users\trefi\onedrive\documents\visual studio 2015\Projects\ClientIProj\ClientIProj\obj\Debug\ClientIProj.RegClient.resources
 C:\Users\trefi\OneDrive\Documents\Visual Studio 2015\Projects\ClientIProj\ClientIProj\obj\Debug\ClientIProj.BasketForm.resources
 C:\Users\trefi\onedrive\documents\visual studio 2015\Projects\ClientIProj\ClientIProj\obj\Debug\ClientIProj.OrderHisrory.resources
+C:\Users\trefi\OneDrive\Documents\Visual Studio 2015\Projects\ClientIProj\ClientIProj\obj\Debug\ClientIProj.csproj.ResolveComReference.cache
