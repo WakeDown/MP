@@ -1,0 +1,30 @@
+<meta charset="utf-8">
+<script>
+	var a = 0;
+	var b = 10000;
+	var middle = parseInt(b - a)/2;
+	var count = 1;
+	var check = "";
+	alert("Answer the questions in the format 'y' or 'n'");
+	while((b-a) > 10){
+	check = prompt("Your number is greater than" + middle + "? ('y' or 'n')");
+	if (check == "y"){
+		a = middle;
+                middle += parseInt((b - a)/2);}
+	if (check == "n"){
+		b = middle;
+                middle -= parseInt((b - a)/2);}
+	count = count + 1;
+	}
+	check = "";
+	while(check != "y"){
+		check = prompt("Your number is " + a + "? ('y' or 'n')");
+	if (check == "y"){
+		alert("Your number is " + a);
+		alert("Count: " + count);}
+	if (check == "n"){
+		a = a + 1;
+		count = count + 1;}
+	}
+
+</script>
