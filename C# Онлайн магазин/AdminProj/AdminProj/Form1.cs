@@ -331,8 +331,9 @@ namespace AdminProj
             wdApp.Visible = true;
             wdApp.Documents.Add();
             Word.Document docum = wdApp.Documents.get_Item(1);
-            wdApp.Selection.Text = "\nСписок клиентов за\n" + DateTime.Now;
-            var wdRange = docum.Range(0, 0);
+            String mes = "\nСписок клиентов за\n" + DateTime.Now;
+            wdApp.Selection.Text = mes;
+            var wdRange = docum.Range(mes.Length, mes.Length);
             var wdTable = docum.Tables.Add(wdRange, clients.Count + 1, 5);  //строки, столбцы
             wdTable.Cell(1, 1).Range.Text = "id";
             wdTable.Cell(1, 2).Range.Text = "Логин";
@@ -348,6 +349,11 @@ namespace AdminProj
                 wdTable.Cell(i, 5).Range.Text = clients[i - 2].getWeb();
             }
             wdTable.set_Style("Таблица-сетка 4");
+        }
+
+        private void toolStrip2_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
         }
     }
 }

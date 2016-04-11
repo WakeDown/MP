@@ -12,3 +12,17 @@ C:\Users\trefi\onedrive\documents\visual studio 2015\Projects\AdminProj\AdminPro
 C:\Users\trefi\onedrive\documents\visual studio 2015\Projects\AdminProj\AdminProj\obj\Debug\AdminProj.OrderInfoForm.resources
 C:\Users\trefi\onedrive\documents\visual studio 2015\Projects\AdminProj\AdminProj\obj\Debug\AdminProj.EnterForm.resources
 C:\Users\trefi\onedrive\documents\visual studio 2015\Projects\AdminProj\AdminProj\obj\Debug\AdminProj.csproj.ResolveComReference.cache
+C:\Users\trefi\Desktop\MP\C# Онлайн магазин\AdminProj\AdminProj\bin\Debug\AdminProj.exe.config
+C:\Users\trefi\Desktop\MP\C# Онлайн магазин\AdminProj\AdminProj\obj\Debug\AdminProj.csproj.ResolveComReference.cache
+C:\Users\trefi\Desktop\MP\C# Онлайн магазин\AdminProj\AdminProj\obj\Debug\AdminProj.exe
+C:\Users\trefi\Desktop\MP\C# Онлайн магазин\AdminProj\AdminProj\obj\Debug\AdminProj.pdb
+C:\Users\trefi\Desktop\MP\C# Онлайн магазин\AdminProj\AdminProj\bin\Debug\AdminProj.exe
+C:\Users\trefi\Desktop\MP\C# Онлайн магазин\AdminProj\AdminProj\bin\Debug\AdminProj.pdb
+C:\Users\trefi\Desktop\MP\C# Онлайн магазин\AdminProj\AdminProj\bin\Debug\MySql.Data.dll
+C:\Users\trefi\Desktop\MP\C# Онлайн магазин\AdminProj\AdminProj\obj\Debug\AdminProj.csprojResolveAssemblyReference.cache
+C:\Users\trefi\Desktop\MP\C# Онлайн магазин\AdminProj\AdminProj\obj\Debug\AdminProj.EditForm.resources
+C:\Users\trefi\Desktop\MP\C# Онлайн магазин\AdminProj\AdminProj\obj\Debug\AdminProj.EnterForm.resources
+C:\Users\trefi\Desktop\MP\C# Онлайн магазин\AdminProj\AdminProj\obj\Debug\AdminProj.Form1.resources
+C:\Users\trefi\Desktop\MP\C# Онлайн магазин\AdminProj\AdminProj\obj\Debug\AdminProj.OrderInfoForm.resources
+C:\Users\trefi\Desktop\MP\C# Онлайн магазин\AdminProj\AdminProj\obj\Debug\AdminProj.Properties.Resources.resources
+C:\Users\trefi\Desktop\MP\C# Онлайн магазин\AdminProj\AdminProj\obj\Debug\AdminProj.csproj.GenerateResource.Cache
