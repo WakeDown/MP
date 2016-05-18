@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordAddIn1", "WordAddIn1\WordAddIn1.csproj", "{D939E097-7F91-4F6E-8C70-937C52FBCEED}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D939E097-7F91-4F6E-8C70-937C52FBCEED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D939E097-7F91-4F6E-8C70-937C52FBCEED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D939E097-7F91-4F6E-8C70-937C52FBCEED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D939E097-7F91-4F6E-8C70-937C52FBCEED}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

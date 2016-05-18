@@ -1,0 +1,16 @@
+c:\users\trefi\onedrive\documents\visual studio 2015\Projects\WordAddIn1\WordAddIn1\bin\Debug\WordAddIn1.dll
+c:\users\trefi\onedrive\documents\visual studio 2015\Projects\WordAddIn1\WordAddIn1\bin\Debug\WordAddIn1.pdb
+c:\users\trefi\onedrive\documents\visual studio 2015\Projects\WordAddIn1\WordAddIn1\bin\Debug\WordAddIn1.dll.manifest
+c:\users\trefi\onedrive\documents\visual studio 2015\Projects\WordAddIn1\WordAddIn1\bin\Debug\WordAddIn1.vsto
+c:\users\trefi\onedrive\documents\visual studio 2015\Projects\WordAddIn1\WordAddIn1\bin\Debug\Microsoft.Office.Tools.Common.dll
+c:\users\trefi\onedrive\documents\visual studio 2015\Projects\WordAddIn1\WordAddIn1\bin\Debug\Microsoft.Office.Tools.Common.v4.0.Utilities.dll
+c:\users\trefi\onedrive\documents\visual studio 2015\Projects\WordAddIn1\WordAddIn1\bin\Debug\Microsoft.Office.Tools.dll
+c:\users\trefi\onedrive\documents\visual studio 2015\Projects\WordAddIn1\WordAddIn1\bin\Debug\Microsoft.Office.Tools.v4.0.Framework.dll
+c:\users\trefi\onedrive\documents\visual studio 2015\Projects\WordAddIn1\WordAddIn1\bin\Debug\Microsoft.Office.Tools.Word.dll
+c:\users\trefi\onedrive\documents\visual studio 2015\Projects\WordAddIn1\WordAddIn1\bin\Debug\Microsoft.VisualStudio.Tools.Applications.Runtime.dll
+c:\users\trefi\onedrive\documents\visual studio 2015\Projects\WordAddIn1\WordAddIn1\obj\Debug\WordAddIn1.csprojResolveAssemblyReference.cache
+c:\users\trefi\onedrive\documents\visual studio 2015\Projects\WordAddIn1\WordAddIn1\obj\Debug\WordAddIn1.Properties.Resources.resources
+c:\users\trefi\onedrive\documents\visual studio 2015\Projects\WordAddIn1\WordAddIn1\obj\Debug\WordAddIn1.csproj.GenerateResource.Cache
+c:\users\trefi\onedrive\documents\visual studio 2015\Projects\WordAddIn1\WordAddIn1\obj\Debug\WordAddIn1.dll
+c:\users\trefi\onedrive\documents\visual studio 2015\Projects\WordAddIn1\WordAddIn1\obj\Debug\WordAddIn1.pdb
+c:\users\trefi\onedrive\documents\visual studio 2015\Projects\WordAddIn1\WordAddIn1\obj\Debug\WordAddIn1.Ribbon1.resources

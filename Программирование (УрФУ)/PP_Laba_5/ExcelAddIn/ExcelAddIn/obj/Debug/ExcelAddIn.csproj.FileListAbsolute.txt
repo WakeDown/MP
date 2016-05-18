@@ -1,0 +1,16 @@
+c:\users\trefi\onedrive\documents\visual studio 2015\Projects\ExcelAddIn\ExcelAddIn\bin\Debug\ExcelAddIn.dll
+c:\users\trefi\onedrive\documents\visual studio 2015\Projects\ExcelAddIn\ExcelAddIn\bin\Debug\ExcelAddIn.pdb
+c:\users\trefi\onedrive\documents\visual studio 2015\Projects\ExcelAddIn\ExcelAddIn\bin\Debug\ExcelAddIn.dll.manifest
+c:\users\trefi\onedrive\documents\visual studio 2015\Projects\ExcelAddIn\ExcelAddIn\bin\Debug\ExcelAddIn.vsto
+c:\users\trefi\onedrive\documents\visual studio 2015\Projects\ExcelAddIn\ExcelAddIn\bin\Debug\Microsoft.Office.Tools.Common.dll
+c:\users\trefi\onedrive\documents\visual studio 2015\Projects\ExcelAddIn\ExcelAddIn\bin\Debug\Microsoft.Office.Tools.Common.v4.0.Utilities.dll
+c:\users\trefi\onedrive\documents\visual studio 2015\Projects\ExcelAddIn\ExcelAddIn\bin\Debug\Microsoft.Office.Tools.dll
+c:\users\trefi\onedrive\documents\visual studio 2015\Projects\ExcelAddIn\ExcelAddIn\bin\Debug\Microsoft.Office.Tools.Excel.dll
+c:\users\trefi\onedrive\documents\visual studio 2015\Projects\ExcelAddIn\ExcelAddIn\bin\Debug\Microsoft.Office.Tools.v4.0.Framework.dll
+c:\users\trefi\onedrive\documents\visual studio 2015\Projects\ExcelAddIn\ExcelAddIn\bin\Debug\Microsoft.VisualStudio.Tools.Applications.Runtime.dll
+c:\users\trefi\onedrive\documents\visual studio 2015\Projects\ExcelAddIn\ExcelAddIn\obj\Debug\ExcelAddIn.Properties.Resources.resources
+c:\users\trefi\onedrive\documents\visual studio 2015\Projects\ExcelAddIn\ExcelAddIn\obj\Debug\ExcelAddIn.Ribbon1.resources
+c:\users\trefi\onedrive\documents\visual studio 2015\Projects\ExcelAddIn\ExcelAddIn\obj\Debug\ExcelAddIn.csproj.GenerateResource.Cache
+c:\users\trefi\onedrive\documents\visual studio 2015\Projects\ExcelAddIn\ExcelAddIn\obj\Debug\ExcelAddIn.dll
+c:\users\trefi\onedrive\documents\visual studio 2015\Projects\ExcelAddIn\ExcelAddIn\obj\Debug\ExcelAddIn.pdb
+C:\Users\trefi\onedrive\documents\visual studio 2015\Projects\ExcelAddIn\ExcelAddIn\obj\Debug\ExcelAddIn.csprojResolveAssemblyReference.cache
