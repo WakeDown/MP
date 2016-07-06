@@ -1,0 +1,16 @@
+﻿TD, TH {
+            padding: 3px;
+            border: 1px solid black;
+            height: 100px;
+        }
+        IMG {
+            height: 100px;
+            width: 100px;
+        }
+        TABLE {
+            margin-top: 10%;
+            background: #ffffff;
+        }
+        BODY {
+            background: #B0BEC5;
+        }
