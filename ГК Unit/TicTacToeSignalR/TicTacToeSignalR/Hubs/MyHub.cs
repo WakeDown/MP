@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 using System.Web;
 using Microsoft.AspNet.SignalR;
 using TicTacToeSignalR.Models;
@@ -71,6 +72,14 @@ namespace TicTacToeSignalR.Hubs
         {
             players.Add(new Player {Id = Context.ConnectionId, Count = 0, ruls = new List<string>()});
             Clients.All.endGame("Подключен игрок. Удачи!");
+        }
+
+        public override Task OnDisconnected(bool stopCalled)
+        {
+            Player player = players.Where(pl => pl.Id == Context.ConnectionId).ElementAt(0);
+            if (player != null)
+                players.Remove(player);
+            return base.OnDisconnected(stopCalled);
         }
     }
 }
