@@ -24,14 +24,19 @@ namespace TicTacToeSignalR.Hubs
         };
 
         private static List<Player> players = new List<Player>();
+        private int count;
 
         public void Send(string x, string y)
         {
             Player player = players.Where(pl => pl.Id == Context.ConnectionId).ElementAt(0);
-            Clients.All.setCheck(x, y);
-            player.ruls.Add(x + ";" + y);
-            Clients.AllExcept(player.Id).playerCanSetWay();
-            checkConditions(player);
+            if (player != null)
+            {
+                count++;
+                Clients.All.setCheck(x, y);
+                player.ruls.Add(x + ";" + y);
+                Clients.AllExcept(player.Id).playerCanSetWay();
+                checkConditions(player);
+            }
         }
 
         private void checkConditions(Player player)
@@ -51,11 +56,12 @@ namespace TicTacToeSignalR.Hubs
                     if (player.ruls[k].Equals(ruls[i])) player.Count ++;
                 }
             }
-            if (player.Count == 3)
+            if (player.Count == 3 || count == 9)
             {
-                Clients.Caller.endGame("Вы победили!");
-                Clients.AllExcept(player.Id).endGame("К сожалению, ваш противник победил...");
+                player.Ex ++;
+                Clients.All.endGame("Новая игра");
                 refrashPlayersRuls();
+                count = 0;
             }
             player.Count = 0;
         }
@@ -70,8 +76,9 @@ namespace TicTacToeSignalR.Hubs
 
         public void PlayerConnected()
         {
-            players.Add(new Player {Id = Context.ConnectionId, Count = 0, ruls = new List<string>()});
-            Clients.All.endGame("Подключен игрок. Удачи!");
+            players.Add(new Player { Id = Context.ConnectionId, Count = 0, ruls = new List<string>(), Ex = 0 });
+            Clients.All.endGame("Подключен игрок. В сети: " + players.Count);
+            count = 0;
         }
 
         public override Task OnDisconnected(bool stopCalled)
